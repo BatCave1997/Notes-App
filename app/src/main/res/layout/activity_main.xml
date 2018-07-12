@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.notepad.MainActivity">
+
+    <ImageButton
+        android:id="@+id/addnote"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="438dp"
+        android:onClick="AddNewNote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addkey" />
+
+    <ListView
+        android:id="@+id/noteslist"
+        android:layout_width="385dp"
+        android:layout_height="422dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/addnote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="casual"
+        android:text="Note down anything"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addnote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteslist" />
+</android.support.constraint.ConstraintLayout>
